@@ -700,7 +700,7 @@ main {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    min-height: 900px;
+    min-height: 950px;
 
     @media (max-width: 768px) {
       min-height: 850px;
@@ -726,9 +726,9 @@ main {
       margin-top: -30%;
     }
 
-    /* @media only screen and (min-width: 428px) and (max-width: 571px) {
+    @media only screen and (min-width: 428px) and (max-width: 571px) {
       margin-top: -25%;
-    } */
+    }
   }
 
   #home .text h1 {
@@ -945,9 +945,6 @@ main {
   #footer .info .links a {
     font-size: 14px;
     margin-bottom: 10px;
-    display: flex;
-    gap:5px;
-    flex-direction: row;
 
     @media (max-width: 768px) {
       font-size: 8px;
@@ -957,7 +954,7 @@ main {
       font-size: 10px;
     }
 
-    @media only screen and (min-width: 429px) and (max-width: 932px) {
+    @media only screen and (min-width: 300px) and (max-width: 932px) {
      
       margin-left: -10px;
      
@@ -980,7 +977,7 @@ main {
       margin-left: -9px;
     }
 
-    @media only screen and (min-width: 429px) and (max-width: 932px) {
+    @media only screen and (min-width: 300px) and (max-width: 932px) {
       margin-top: 40px;
       margin-left: -50px;
       font-size: 19px;
