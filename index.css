@@ -726,9 +726,9 @@ main {
       margin-top: -30%;
     }
 
-    @media only screen and (min-width: 428px) and (max-width: 571px) {
+    /* @media only screen and (min-width: 428px) and (max-width: 571px) {
       margin-top: -25%;
-    }
+    } */
   }
 
   #home .text h1 {
