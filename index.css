@@ -719,11 +719,15 @@ main {
     text-align: center;
 
     @media only screen and (min-width: 414px) and (max-width: 896px) {
-      margin-top: -37%;
+      margin-top: -35%;
     }
 
     @media only screen and (min-width: 390px) and (max-width: 844px) {
       margin-top: -30%;
+    }
+
+    @media only screen and (min-width: 428px) and (max-width: 571px) {
+      margin-top: 10%;
     }
   }
 
