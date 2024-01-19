@@ -631,23 +631,24 @@ main {
 }
 
 @media (max-width: 768px) {
+
   body {
     background-color: #000000;
-    webkit-scrollbar {
-      width: 10px;
-      border-radius: 25px;
-    }
-    webkit-scrollbar-track {
-      background: #000000;
-    }
-    webkit-scrollbar-thumb {
-      background: #ec0000;
-      border-radius: 30px;
-    }
-    webkit-scrollbar-thumb:hover {
-      background: #ff0000;
-    }
   }
+
+  body::-webkit-scrollbar-track {
+    background: #000000;
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background: #ff0000;
+    border-radius: 30px;
+  }
+
+  body::-webkit-scrollbar-thumb:hover {
+    background: #ff0000;
+  }
+}
   
  
   nav {
@@ -656,11 +657,14 @@ main {
 
     @media (max-width: 768px) {
       background-color: #97216a6e;
+      
     }
 
     @media only screen and (min-width: 768px) and (max-width: 1024px) {
       font-size: 15px;
     }
+
+  
   }
 
   header .logo {
@@ -683,15 +687,6 @@ main {
     }
   }
 
-  header button.nav-button {
-    /* display: none; */
-/* 
-    @media only screen and (min-width: 768px) and (max-width: 1024px) {
-      display: block;
-      margin-top: 28px;
-    } */
-  }
-
   header button.nav-button a{
     text-decoration: none;
     
@@ -710,7 +705,7 @@ main {
     @media (max-width: 768px) {
       min-height: 850px;
       padding: 20px;
-      padding-top: -5%;
+      padding-top: -6%;
     }
 
     @media only screen and (min-width: 1366px) and (max-width: 1024px) {
@@ -769,6 +764,11 @@ main {
       width: 350px;
       height: 350px;
     }
+
+    @media only screen and (min-width: 430px) and (max-width: 932px) {
+      width: 100%;
+    
+    }
   }
 
   #home .image img {
@@ -778,6 +778,10 @@ main {
     @media only screen and (min-width: 768px) and (max-width: 1024px) {
       width: 350px;
       height: 350px;
+      object-fit: cover;
+    }
+
+    @media only screen and (min-width: 430px) and (max-width: 932px) {
       object-fit: cover;
     }
   }
@@ -809,6 +813,11 @@ main {
 
     @media only screen and (min-width: 768px) and (max-width: 1024px) {
       font-size: 18px;
+      width: 100%;
+    }
+
+    @media only screen and (min-width: 430px) and (max-width: 932px) {
+      font-size: 17px;
       width: 100%;
     }
   }
@@ -850,12 +859,6 @@ main {
   #projects .card img {
     width: 100%;
     height: auto;
-  }
-
-  #projects .card .collabs-card img {
-    border-radius: 7px;
-    margin: 2rem;
-    width: 100%;
   }
 
   #footer {
@@ -945,6 +948,12 @@ main {
     @media only screen and (min-width: 768px) and (max-width: 1024px) {
       font-size: 10px;
     }
+
+    @media only screen and (min-width: 430px) and (max-width: 932px) {
+     
+      margin-left: -10px;
+     
+    }
   }
 
   #footer .info .footer-social-icons {
@@ -961,6 +970,12 @@ main {
       margin-top: 10px;
       font-size: 18px;
       margin-left: -9px;
+    }
+
+    @media only screen and (min-width: 430px) and (max-width: 932px) {
+      margin-top: 40px;
+      margin-left: -50px;
+      font-size: 19px;
     }
   }
 
@@ -1009,4 +1024,4 @@ main {
   #footer .form-button a {
     font-size: 16px;
   }
-}
+
